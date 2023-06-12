@@ -6,6 +6,12 @@ This is not a UML diagram, nor is it a support dashboard.  It is for developers 
 
 This time I decided to do it as a Rust Wasm project, and since its my first Rust the code is, well, bad.  So I'm not sharing the code, but I am sharing the little web site example.
 
+## The demo
+
+Is on [github pages here](https://pendared.github.io/archi-client-pub/).
+
+Click on the 'mini map', click to zoom, click on the boxes, click on the data flows, click on the arrows on the data flow.  Mouse over the boxes and arrows for tool tips.
+
 ## Can you use it?
 
 Yes you can.  (Bob the builder reference).
