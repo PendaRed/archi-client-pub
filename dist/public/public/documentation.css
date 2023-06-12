@@ -1,0 +1,8 @@
+.title-right {
+ float: right;
+ font-size: 12px;
+}
+
+.title-left {
+ display: inline;
+}
