@@ -1,0 +1,94 @@
+{
+  "title": "System1 Architecture",
+  "default_url": "/public/000_instructions.html",
+  "tot_width": 2400,
+  "tot_height": 800,
+  "service_width": 120,
+  "service_height": 20,
+  "grid_cell_width": 1,
+  "grid_cell_height": 1,
+  "services" : [
+    {
+      "id": "comp1",
+      "name": "The Data Pipeline",
+      "description": "The Data Pipeline is a collection of services that process data",
+      "style": "component",
+      "doc_url": "/public/comp1.html",
+      "z_order" : 2, "grid_x": 10, "grid_y": 250, "w_mult": 3.5, "h_mult": 3
+    },
+    {
+      "id": "svc1",
+      "name": "SourceFeed",
+      "description": "Data Source of formatted messages",
+      "style": "svc",
+      "doc_url": "/public/service1.html",
+      "parent_id" : "comp1",
+      "z_order" : 1, "grid_x": 10, "grid_y": 10, "w_mult": 1, "h_mult": 1
+    },
+    {
+      "id": "svc2",
+      "name": "Source Converter",
+      "description": "Converts messages to standard form",
+      "style": "svc",
+      "doc_url": "/public/service2.html",
+      "z_order" : 1, "grid_x": 540, "grid_y": 190, "w_mult": 1, "h_mult": 1
+    },
+    {
+      "id": "svc3",
+      "name": "Standard Data",
+      "description": "Adds missing information to the standard data.",
+      "style": "db",
+      "doc_url": "/public/service3.html",
+      "parent_id" : "comp1",
+      "z_order" : 1, "grid_x": 290, "grid_y": 10, "w_mult": 1, "h_mult": 1
+    },
+    {
+      "id": "svc4",
+      "name": "Data Cache Stuff",
+      "description": "Lazy Loading cache",
+      "style": "svc",
+      "doc_url": "/public/service4.html",
+      "z_order" : 1, "grid_x": 200, "grid_y": 100, "w_mult": 1, "h_mult": 1
+    }
+  ],
+  "dataflows": [
+    {
+      "id": "df1",
+      "name": "Order",
+      "doc_url": "/public/df1_simple_order.html",
+      "steps" : [
+        {
+          "order": 1,
+          "src_id": "svc1",
+          "dest_id": "svc2",
+          "description": "Order received in src format, eg csv"
+        },
+        {
+          "order": 2,
+          "src_id": "svc2",
+          "dest_id": "svc4",
+          "description": "Now in our standard order format, AcmeOrder"
+        }
+      ]
+    },
+    {
+      "id": "df2",
+      "name": "Update",
+      "doc_url": "/public/df2_manual_update.html",
+      "steps" : [
+        {
+          "order": 1,
+          "src_id": "svc4",
+          "dest_id": "svc3",
+          "description": "An update request.  For instance from a user."
+        },
+        {
+          "order": 2,
+          "src_id": "svc3",
+          "dest_id": "svc2",
+          "description": "The updated AcmeOrder flows as normal"
+        }
+      ]
+    }
+  ]
+}

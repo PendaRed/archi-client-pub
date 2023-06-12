@@ -33,6 +33,14 @@ npm start
 This will allow you to view index.html will loads up the data\design.sjon and the data\styles.json
 and from that starts to draw the pictures.  In this example the design documentation is in the public dir - but you can change the urls in the design to load them from anywhere.
 
+And then to bundle up your site as usual, which invokes webpack and copies it all into dist.
+
+```
+npm run build --omit=dev
+```
+For my site, I host on github pages, so the final thing is to clear out docs, and copy dist into docs.
+
+
 ## Supported pictures
 
 V1.0.0:
