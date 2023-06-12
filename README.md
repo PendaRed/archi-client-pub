@@ -12,6 +12,27 @@ Yes you can.  (Bob the builder reference).
 
 Anyway, edit the design.json and the styles.json, and change the linked pages.  After downloading you should see what I mean.
 
+## For your new project
+
+Create your own project - eg an empty dir, and then init th edir, and install the depenencies.
+
+You will need to add a dependency to the pkg dir which contains archi-client, see the example package.json in this project.
+
+```
+npm init
+# Now edit the package.json to include the webpack dev dependencies and the pkg dir
+# you can copy these from this example projects package.json
+npm install
+```
+You should check node-modules and ensure that archi-client was copied in there from the archi-client directory that is listed in your package.json dependencies.   I had to run npm install a couple of times.
+
+Finally to serve up your designs just do
+```
+npm start
+```
+This will allow you to view index.html will loads up the data\design.sjon and the data\styles.json
+and from that starts to draw the pictures.  In this example the design documentation is in the public dir - but you can change the urls in the design to load them from anywhere.
+
 ## Supported pictures
 
 V1.0.0:

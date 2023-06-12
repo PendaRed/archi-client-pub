@@ -1,0 +1,29 @@
+{
+  "name": "archi-client-pub",
+  "version": "1.0.0",
+  "description": "An example for archi-client",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PendaRed/archi-client-pub.git"
+  },
+  "author": "Jonathan Gibbons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PendaRed/archi-client-pub/issues"
+  },
+  "homepage": "https://github.com/PendaRed/archi-client-pub#readme",
+  "dependencies" : {
+    "archi-client": "file:./archi-client"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}

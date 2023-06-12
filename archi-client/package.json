@@ -1,0 +1,16 @@
+{
+  "name": "archi-client",
+  "collaborators": [
+    "Jonathan Gibbons"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "archi_client_bg.wasm",
+    "archi_client.js",
+    "archi_client_bg.js",
+    "archi_client.d.ts"
+  ],
+  "module": "archi_client.js",
+  "types": "archi_client.d.ts",
+  "sideEffects": false
+}
