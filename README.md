@@ -12,6 +12,8 @@ Is on [github pages here](https://pendared.github.io/archi-client-pub/).
 
 Click on the 'mini map', click to zoom, click on the boxes, click on the data flows, click on the arrows on the data flow.  Mouse over the boxes and arrows for tool tips.
 
+ps Yes I know it's really basic, and yes, I'll improve it somewhat still, but it's my first Rist wasm, done in between real life.
+
 ## Can you use it?
 
 Yes you can.  (Bob the builder reference).
