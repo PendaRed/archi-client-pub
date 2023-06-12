@@ -355,17 +355,17 @@
 /******/ 					"__wbindgen_memory": function() {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_memory"]();
 /******/ 					},
+/******/ 					"__wbindgen_closure_wrapper172": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper172"](p0i32,p1i32,p2i32);
+/******/ 					},
 /******/ 					"__wbindgen_closure_wrapper174": function(p0i32,p1i32,p2i32) {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper174"](p0i32,p1i32,p2i32);
 /******/ 					},
 /******/ 					"__wbindgen_closure_wrapper176": function(p0i32,p1i32,p2i32) {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper176"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper178": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper178"](p0i32,p1i32,p2i32);
-/******/ 					},
-/******/ 					"__wbindgen_closure_wrapper512": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper512"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper514": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper514"](p0i32,p1i32,p2i32);
 /******/ 					}
 /******/ 				}
 /******/ 			};
@@ -468,7 +468,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./archi-client/archi_client_bg.wasm":"c14b05cbd5c58d74f0ed"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./archi-client/archi_client_bg.wasm":"de5bef7432abddcc727c"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
