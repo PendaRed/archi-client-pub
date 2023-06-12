@@ -1,0 +1,31 @@
+## Rusty Architecture Client
+
+In several jobs I needed a guide for devs to show data flows and services.  I did this with a little interactive picture they could click on, to get summaries, and lists of URLS.
+
+This is not a UML diagram, nor is it a support dashboard.  It is for developers who want a quick intro to a system with links.
+
+This time I decided to do it as a Rust Wasm project, and since its my first Rust the code is, well, bad.  So I'm not sharing the code, but I am sharing the little web site example.
+
+## Can you use it?
+
+Yes you can.  (Bob the builder reference).
+
+Anyway, edit the design.json and the styles.json, and change the linked pages.  After downloading you should see what I mean.
+
+## Supported pictures
+
+V1.0.0:
+
+Shapes you can use in style.json
+
+- rect:  A rectangle about the service name.
+- can: a tin can shape, used for data stores really.
+
+Clickable regions
+
+- On the dataflows you can click on the arrow, and hover over for tool tip.
+- On the rectangle/can you can hover over for tool tip, or click on to display the URL.
+
+Group-by
+
+- Visio users will understand group-by.   This tool has instead an optional 'parent id' which can refer to another service.  All x and y will then be relative to the parent, which means you can move the block together.
