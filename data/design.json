@@ -1,6 +1,6 @@
 {
   "title": "System1 Architecture",
-  "default_url": "/public/000_instructions.html",
+  "default_url": "./public/000_instructions.html",
   "tot_width": 2400,
   "tot_height": 800,
   "service_width": 120,
@@ -13,7 +13,7 @@
       "name": "The Data Pipeline",
       "description": "The Data Pipeline is a collection of services that process data",
       "style": "component",
-      "doc_url": "/public/comp1.html",
+      "doc_url": "./public/comp1.html",
       "z_order" : 2, "grid_x": 10, "grid_y": 250, "w_mult": 3.5, "h_mult": 3
     },
     {
@@ -21,7 +21,7 @@
       "name": "SourceFeed",
       "description": "Data Source of formatted messages",
       "style": "svc",
-      "doc_url": "/public/service1.html",
+      "doc_url": "./public/service1.html",
       "parent_id" : "comp1",
       "z_order" : 1, "grid_x": 10, "grid_y": 10, "w_mult": 1, "h_mult": 1
     },
@@ -30,7 +30,7 @@
       "name": "Source Converter",
       "description": "Converts messages to standard form",
       "style": "svc",
-      "doc_url": "/public/service2.html",
+      "doc_url": "./public/service2.html",
       "z_order" : 1, "grid_x": 540, "grid_y": 190, "w_mult": 1, "h_mult": 1
     },
     {
@@ -38,7 +38,7 @@
       "name": "Standard Data",
       "description": "Adds missing information to the standard data.",
       "style": "db",
-      "doc_url": "/public/service3.html",
+      "doc_url": "./public/service3.html",
       "parent_id" : "comp1",
       "z_order" : 1, "grid_x": 290, "grid_y": 10, "w_mult": 1, "h_mult": 1
     },
@@ -47,7 +47,7 @@
       "name": "Data Cache Stuff",
       "description": "Lazy Loading cache",
       "style": "svc",
-      "doc_url": "/public/service4.html",
+      "doc_url": "./public/service4.html",
       "z_order" : 1, "grid_x": 200, "grid_y": 100, "w_mult": 1, "h_mult": 1
     }
   ],
@@ -55,7 +55,7 @@
     {
       "id": "df1",
       "name": "Order",
-      "doc_url": "/public/df1_simple_order.html",
+      "doc_url": "./public/df1_simple_order.html",
       "steps" : [
         {
           "order": 1,
@@ -74,7 +74,7 @@
     {
       "id": "df2",
       "name": "Update",
-      "doc_url": "/public/df2_manual_update.html",
+      "doc_url": "./public/df2_manual_update.html",
       "steps" : [
         {
           "order": 1,

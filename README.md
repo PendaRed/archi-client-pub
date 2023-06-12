@@ -14,9 +14,11 @@ Anyway, edit the design.json and the styles.json, and change the linked pages.  
 
 ## For your new project
 
-Create your own project - eg an empty dir, and then init th edir, and install the depenencies.
+Create your own project - eg an empty dir, and then init the dir, and install the depenencies.
 
 You will need to add a dependency to the pkg dir which contains archi-client, see the example package.json in this project.
+
+This example has the design in the data directory, and the documents in the public directory.  The design directory is hard coded, but it can have any urls within it - this example refers to ./public/...
 
 ```
 npm init
