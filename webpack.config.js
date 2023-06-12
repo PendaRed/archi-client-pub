@@ -11,12 +11,12 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
        {
-          from: "public/*",
-          to: "public/",
+          from: "public",
+          to: "public",
         },
         {
-          from: "data/*",
-          to: "data/",
+          from: "data",
+          to: "data",
         },
         {
           from: "index.html",
