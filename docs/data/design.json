@@ -89,6 +89,25 @@
           "description": "The updated AcmeOrder flows as normal"
         }
       ]
+    },
+    {
+      "id": "df3",
+      "name": "There and Back",
+      "doc_url": "./public/df3_thereback.html",
+      "steps" : [
+        {
+          "order": 1,
+          "src_id": "svc1",
+          "dest_id": "svc3",
+          "description": "An async call"
+        },
+        {
+          "order": 2,
+          "src_id": "svc3",
+          "dest_id": "svc1",
+          "description": "and the response"
+        }
+      ]
     }
   ]
 }
