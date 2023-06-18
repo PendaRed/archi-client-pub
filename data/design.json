@@ -46,7 +46,7 @@
       "id": "svc4",
       "name": "Data Cache Stuff",
       "description": "Lazy Loading cache",
-      "style": "svc",
+      "style": "external",
       "doc_url": "./public/service4.html",
       "z_order" : 1, "grid_x": 200, "grid_y": 100, "w_mult": 1, "h_mult": 1
     }

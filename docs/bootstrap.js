@@ -220,6 +220,9 @@
 /******/ 					"__wbg_closePath_d0ab75d4def749a2": function(p0i32) {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbg_closePath_d0ab75d4def749a2"](p0i32);
 /******/ 					},
+/******/ 					"__wbg_ellipse_b69a011e539ab5a2": function(p0i32,p1f64,p2f64,p3f64,p4f64,p5f64,p6f64,p7f64) {
+/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbg_ellipse_b69a011e539ab5a2"](p0i32,p1f64,p2f64,p3f64,p4f64,p5f64,p6f64,p7f64);
+/******/ 					},
 /******/ 					"__wbg_lineTo_dbe49320dd6e392a": function(p0i32,p1f64,p2f64) {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbg_lineTo_dbe49320dd6e392a"](p0i32,p1f64,p2f64);
 /******/ 					},
@@ -355,14 +358,14 @@
 /******/ 					"__wbindgen_memory": function() {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_memory"]();
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper160": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper160"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper161": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper161"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper162": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper162"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper163": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper163"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper164": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper164"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper165": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper165"](p0i32,p1i32,p2i32);
 /******/ 					},
 /******/ 					"__wbindgen_closure_wrapper495": function(p0i32,p1i32,p2i32) {
 /******/ 						return installedModules["./archi-client/archi_client_bg.js"].exports["__wbindgen_closure_wrapper495"](p0i32,p1i32,p2i32);
@@ -468,7 +471,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./archi-client/archi_client_bg.wasm":"7908e2c1e4a0b9a3c855"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./archi-client/archi_client_bg.wasm":"b39e6125f67f78e84c68"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {

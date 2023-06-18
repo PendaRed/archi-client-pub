@@ -17,6 +17,14 @@
       "shape": "can"
     },
     {
+      "name" :  "external",
+      "line_colour" : "#000000",
+      "selected_colour" : "#FF0000",
+      "txt_colour" :  "#000000",
+      "bg_colour" :   "#FFFFFF",
+      "shape": "elipse"
+    },
+    {
       "name" :  "component",
       "line_colour" : "#F5F5F5",
       "selected_colour" : "#AA0000",

@@ -48,7 +48,7 @@ And then to bundle up your site as usual, which invokes webpack and copies it al
 ```
 npm run build --omit=dev
 ```
-For my site, I host on github pages, so the final thing is to clear out docs, and copy dist into docs.
+For my site, I host on github pages, so you will notice I changed webpack.confif.js to publish to docs rather than dist.   You could also use Jekyl or similar to produce the public content and link to that.
 
 
 ## Supported pictures
